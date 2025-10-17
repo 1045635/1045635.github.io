@@ -16,13 +16,14 @@ responsible for internetworking, connecting different networks together, and mov
 ## Link (Network Access)
 This layer handles the transmission of data between devices that are on the same local network.
 
-## TCP
-a fundamental communication protocol that ensures reliable data delivery over the internet by breaking data into packets, sequencing them, and reassembling them at the destination.
-
 Protocols in this layer include:
-
 - Wifi
 - Bluetooth
 - LTE
-- Ethernet 
+- Ethernet
+
+## TCP
+a fundamental communication protocol that ensures reliable data delivery over the internet by breaking data into packets, sequencing them, and reassembling them at the destination.
+
+ 
 
