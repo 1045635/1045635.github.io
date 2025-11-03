@@ -36,3 +36,5 @@ Protocols in this layer include:
 - Ethernet
 
 
+journals/colors.md
+![Picture of art and code](/images/Screenshot 2025-10-39 at 11.03.54 AM)
