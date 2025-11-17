@@ -86,7 +86,7 @@ It's important that this protocol uses a new key for each message so that, if an
 
 - Why is it important that you never share your secret key?
 
-It's important to never share your secret key because it could give someone access to very personal/sensitive information by being able to decrypt it.
+It's important to never share your secret key because it could give someone access to very personal/sensitive information such as messages by being able to decrypt it.
 
 - In the transport layer, do these messages use TCP or UDP? Why?
 
@@ -99,4 +99,4 @@ In the internet layer, the packets are routed across different networks to reach
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
 
-Even if the adversary in the middle can't read the contents of the message, they can see still other information like who is communicating with whom and when they sent the messages.
+Even if the adversary in the middle can't read the contents of the message, they can see still other information like who is communicating with whom and when they sent the messages. They can also see ip addresses as well as the header of the packets.
