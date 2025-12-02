@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Who wants ice cream? </title>
+		<script src="../js/validate.js"></script>
+	</head>
+	<body>
+		<form action="https://httpbin.org/post" method="POST">
+			What is your name?
+			<input type="text" name="yourname">	
+			<br>
+			What is your email?
+			<input type:"email" name="youremail" placeholder="name@example.com">
+			<br>
+			How many people are you bringing to the party?
+			<input type:"text" name="numberofpeople">
+			<br>
+			What is your favorite ice cream flavor?
+			<select id="icecream" name="icecream">
+				<option value="chocolate"> Chocolate</option>
+				<option value = "Vanilla"> Vanilla </option>
+				<option value = "Strawberry"> Strawberry </option>
+				<option value = "Other"> Other </option>
+			</select>
+			<br>
+			What toppings do you like?
+			<br>
+			Sprinkles
+			<input type="checkbox" id= "sprinkles" name="sprinkles" value="value1">
+			<br>
+			Magic Shells
+			<input type="checkbox" id= "magic shell" name= "magic shell" value="value2">
+			<br>
+			Chocolate Chips
+			<input type="checkbox" id="Chocolate chips" name="Chocolate Chips" value="value3">
+			<br>
+			Gummies
+			<input type="checkbox" id="gummies" name="gummies" value="value4">
+			<br>
+			Other
+			<input type="checkbox" id="other" name="other" value="value5">
+			<br>
+			What kind of entertainment should we have at the party?
+			<select id=entertainment name="entertainment">
+				<option value="Ballon Animals"> Ballon Animals </option>
+				<option value="Bounce House"> Bounce House </option>
+				<option value="Clown"> Clown </option>
+				<option value="Cornhole"> Cornhole </option>
+				<option value="DJ"> DJ </option>
+				<option value="Face Painting"> Face Painting </option>
+				<option value="Magician"> Magician </option>
+			</select>
+			<br>
+			Do you have any other suggestions or comments?
+			<input type="text" id"suggestions" name="suggestions">
+			<br>
+			<button type="submit"> Submit</button>
+		</form>
+	</body>
+</html>
