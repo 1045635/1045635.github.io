@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Top Chef </title>
+<style>
+.grid{
+display:grid;
+height: 100vh;
+gap: 10px;
+grid:
+'head head head' 1fr
+'main main main' 3fr
+'foot middle foot'23fr
+/200px 1fr;
+}
+#main{
+grid-area: main;
+background-color: grey;
+color: black;
+font-size: 30px;
+text-align: center;
+}
+#head{
+grid-area: head;
+background-color: white;
+color: black;
+font-size: 30px;
+text-align: center;
+}
+#foot{
+grid-area: foot;
+background-color: white;
+color: black;
+font-size: 30px;
+text-align: center;
+}
+#middle{
+grid-area: middle;
+background-color: grey;
+color: black;
+font-size: 30px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid">
+<div id="head"> Head</div>
+<div id="main"> Main </div>
+<div id= "foot">Foot </div>
+<div id="middle">Middle</div>
+</div>
+
+
+
+</body>
+</html>
