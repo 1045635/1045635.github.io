@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html lang= "en">
 <head>
+<title> Mei Shadow Website </title>
+<link rel= "icon" href = "../images/shadow.png" type="image/png">
+<style>
+.grid{
+display:grid;
+height: 100vh;
+gap: 10px;
+grid:
+'head head head' 1fr
+'main main main' 4fr
+'side1 foot side2' 2fr
+/200px 1fr;
+}
+.main{
+grid-area: main;
+background-color: #961f14;
+color: #a88231;
+font-size: 30px;
+text-align: center;
+}
+.head{
+grid-area: head;
+background-color: #black;
+color: #a88231;
+font-size: 50px;
+text-align: center;
+}
+.side1{
+grid-area: side1;
+background-color: #961f14;
+color: #a88231;
+font-size:30px;
+text-align: center;
+}
+.foot{
+grid-area: foot;
+background-color: #961f14;
+color: #a88231;
+font-size: 30px;
+text-align: center;
+}
+.side2{
+grid-area: side2;
+background-color: #961f14;
+color: #a88231;
+font-size: 30px;
+text-align: center;
+}
+</style>
 
 </head>
-<body>
+<body style="background-color: black;">
+<div class="grid">
+<div class="main"> Main </div>
+<div class="head"> </div>
+<div class="menu'> Menu </div>
+<div class= "side"> Side </div>
+<div class= "foot"> Foot </div>
+<div class="side2"> Side2</div>
+<div class="side1"> Side1</div>
+
+
 
 </body>
 </html>
