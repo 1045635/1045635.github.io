@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang= "en">
 <head>
-<title> Mei Shadow Website </title>
+<title>SHADOW THE HEDGEHOG</title>
 <link rel= "icon" href = "../images/shadow.png" type="image/png">
 <style>
 .grid{
@@ -10,7 +10,7 @@ height: 100vh;
 gap: 10px;
 grid:
 'head head head' 1fr
-'main main main' 4fr
+'main main menu' 4fr
 'side1 foot side2' 2fr
 /200px 1fr;
 }
@@ -19,6 +19,13 @@ grid-area: main;
 background-color: #961f14;
 color: #a88231;
 font-size: 30px;
+text-align: center;
+}
+.menu{
+grid-area:menu;
+background-color: #961f14;
+font-size: 30px;
+color: #a99231;
 text-align: center;
 }
 .head{
@@ -56,16 +63,20 @@ font-size: 30px;
 text-align: center;
 }
 </style>
-
 </head>
+
 <body style="background-color: black;">
 <div class="grid">
-<div class="main"> Main </div> 
+<div class="main">
+<audio controls autoplay loop>
+<source src="../images/Shadow.mp3" type="audio/mp3">
+</audio>
+</div> 
 <div class="head">
 <img src="../images/header_shadowthehedgehog.jpg" alt="Shadow" height="250">
 <img src="../images/images-removebg-preview.png" alt="Logo" class="image2" height="200">
  </div>
-<div class="menu'> Menu </div>
+<div class="menu"> Menu </div>
 <div class= "side"> Side </div>
 <div class= "foot"> Foot </div>
 <div class="side2"> Side2</div>
