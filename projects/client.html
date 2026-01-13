@@ -24,9 +24,15 @@ text-align: center;
 .head{
 grid-area: head;
 background-color: #black;
+css:overflow:hidden;
 color: #a88231;
 font-size: 50px;
 text-align: center;
+}
+.image2{
+position: absolute;
+left:-50px;
+top:0;
 }
 .side1{
 grid-area: side1;
@@ -54,8 +60,11 @@ text-align: center;
 </head>
 <body style="background-color: black;">
 <div class="grid">
-<div class="main"> Main </div>
-<div class="head"> </div>
+<div class="main"> Main </div> 
+<div class="head">
+<img src="../images/header_shadowthehedgehog.jpg" alt="Shadow" height="250">
+<img src="../images/images-removebg-preview.png" alt="Logo" class="image2" height="200">
+ </div>
 <div class="menu'> Menu </div>
 <div class= "side"> Side </div>
 <div class= "foot"> Foot </div>
