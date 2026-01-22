@@ -2,35 +2,39 @@
 <html lang= "en">
 <head>
 <title>SHADOW THE HEDGEHOG</title>
-<link rel= "icon" href = "../images/shadow.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+<link rel= "icon" href = "../images/shadowfavicon.png" type="image/png">
 <style>
 .grid{
 display:grid;
-height: 100vh;
-gap: 10px;
+height: 150vh;
+gap: 0px;
 grid:
 'head head head' 1fr
 'main main menu' 4fr
-'side1 foot side2' 2fr
-/200px 1fr;
+'side1 foot side2' 5fr
+/2fr 2fr 2fr;
 }
 .main{
 grid-area: main;
-background-color: #961f14;
+css:overflow: hidden;
+background-color: #380606;
+background-image: linear-gradient(to bottom, #380606, black);
 color: #a88231;
 font-size: 30px;
 text-align: center;
 }
 .menu{
 grid-area:menu;
-background-color: #961f14;
+background-color: #black;
+background-image: linear-gradient(to bottom, #380606, black);
 font-size: 30px;
 color: #a99231;
 text-align: center;
 }
 .head{
 grid-area: head;
-background-color: #black;
+background-color: black;
 css:overflow:hidden;
 color: #a88231;
 font-size: 50px;
@@ -40,49 +44,121 @@ text-align: center;
 position: absolute;
 left:-50px;
 top:0;
+transform: translateX(-100%);
+opacity: 0;
+animation: slideIn 1s forwards;
+animation-delay: 0.5s;
+}
+.image3{
+position: abosolute;
+top: 10;
+margin-top: -50px;
+left: -50px;
+}
+@keyframes slideIn{
+0%{
+transform: translateX(-100%);
+opacity: 0;
+}
+100%{
+transform: translateX(0);
+opacity: 1;
+}
 }
 .side1{
 grid-area: side1;
-background-color: #961f14;
+background-color: black;
+background-image: linear-gradient(to bottom, black, #380606);
+display:grid;
+place-items: center;
 color: #a88231;
 font-size:30px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+transform-style: preserve-3d;
 text-align: center;
+}
+.side1:hover{
+transform: scale(1.05) translateZ(5px);
+box-shadow: 0 10px 20px rga(0,0,0,0.2);
 }
 .foot{
 grid-area: foot;
-background-color: #961f14;
+background-color: black;
+background-image: linear-gradient(to bottom, black, #380606);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+transform-style: preserve-3d;
 color: #a88231;
+display:grid;
+place-items: center;
 font-size: 30px;
 text-align: center;
+}
+.foot:hover{
+transform: scale(1.05) translateZ(5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 .side2{
 grid-area: side2;
-background-color: #961f14;
+background-color: black;
+background-image: linear-gradient(to bottom, black, #380606);
 color: #a88231;
 font-size: 30px;
+display:grid;
+place-items: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+transform-style: preserve-3d;
 text-align: center;
 }
+.side2:hover{
+transform: scale(1.05) translateZ(5px);
+box-shadow: 0 10px 20px rga(0,0,0,0.2);
+}
+@keyframes spin{
+from{
+transform: rotate(0deg);
+}
+to{
+transform: rotate(360deg);
+}
+}
+.spin{
+animation-name:spin;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+width: 400px;
+height: 400x;
+}
+
 </style>
 </head>
 
 <body style="background-color: black;">
 <div class="grid">
 <div class="main">
+<img src="../images/fighting.gif" alt="gif" height="590" width="920">
+</div> 
+<div class="head">
+<img src="../images/header_shadowthehedgehog.jpg" alt="Shadow" height="250" class="image1">
+<a href="https://www.youtube.com/watch?v=wxsZmmxUgkM"><img src="../images/images-removebg-preview.png" alt="Logo" class="image2" height="200"></a>
+ </div>
+<div class="menu"> 
 <audio controls autoplay loop>
 <source src="../images/Shadow.mp3" type="audio/mp3">
 </audio>
-</div> 
-<div class="head">
-<img src="../images/header_shadowthehedgehog.jpg" alt="Shadow" height="250">
-<img src="../images/images-removebg-preview.png" alt="Logo" class="image2" height="200">
+<img src="../images/cd-removebg-preview.png" alt="cd" class="spin">
+<img src="../images/crush40.jpg" alt="crush40"  class="image3">
+</div>
+<div class= "side"> Side  </div>
+<div class= "foot"> 
+<a href="teamdark.html"> <img src="../images/rdark.png" alt="red chaos emerald" width=300> </a>
  </div>
-<div class="menu"> Menu </div>
-<div class= "side"> Side </div>
-<div class= "foot"> Foot </div>
-<div class="side2"> Side2</div>
-<div class="side1"> Side1</div>
-
-
+<div class="side2">
+<a href="featuredgames.html"><img src="../images/gdark.png" alt="green chaos emerald" width=300></a>
+ </div>
+<div class="side1">
+<a href="index.html"><img src="../images/ydark.png" alt="yellow chaos emerald" width=300></a>
+ </div>
 
 </body>
 </html>
