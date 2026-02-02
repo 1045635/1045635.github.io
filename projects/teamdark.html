@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta charset="UTF-8">
 <title> Team Dark </title>
-
+<link rel="stylesheet" href="styles.css">
+<style>
+.grid{
+display: grid;
+height: 200vh;
+gap: 10px;
+grid:
+'head head head' 1fr
+'desc desc desc' 2fr
+'main main menu' 4fr
+'side foot foot' 4fr
+/2fr 2fr 2fr;
+}
+.head{
+grid-area: head;
+background-image: linear-gradient(to top, black, #5C1C0E);
+font-size: 30px;
+text-align: center;
+display: grid;
+}
+.main{
+grid-area: main;
+background-color: #5C1C0E;
+text-align: center;
+border: 1px solid #b89242;
+display:grid;
+font-size: 30px;
+}
+.menu{
+grid-area: menu;
+display: grid;
+background-color: black;
+font-size: 30px;
+}
+.desc{
+grid-area: desc;
+font-size: 30px;
+border: 1px solid #b89242;
+text-align: center;
+background-color: #5C1C0E;
+display: grid;
+}
+.side{
+grid-area: side;
+background-image: linear-gradient(to bottom, black, #5C1C0E);
+background-color: black;
+border; 1px solid #b89242;
+text-align: center;
+display: grid;
+font-size: 30px;
+}
+.foot{
+grid-area: foot;
+border: 1px solid #b89242;
+text-align: center;
+background-color: #5C1C0E;
+display: grid;
+font-size: 30px;
+}
+</style>
 </head>
 <body>
+<div class="grid">
+<div class="head">
+<h1> T.E.A.M &nbsp;&nbsp;&nbsp;  D.A.R.K </h1> </div>
+<div class="main"> 
+<h1> Rouge the Bat: </h1>
+<p> Rouge the Bat is a jewel thief and a part-time government spy for the president of the United Federation and in close association with G.U.N. She has a weakness for jewels such as the Master Emerald and Chaos Emeralds. Her powers includes super-level kicking power and flight. </p>
 
+<p> In Team Dark, Rouge serves as the tactical, vocal, and strategic leader, keeping the other two members togehter. Using her intelligence, shes directs the team and ensures missions are successful. </p>
+ </div>
+<div class="menu"> 
+<img src="../images/rouge.png" alt="Rouge the Bat" width=500>
+ </div>
+<div class="desc"> 
+<h2> Team Dark is a group that appears in the <em> Sonic the Hedgehog </em> series. It's a team founded by Shadow the Hedghog and includes the following characters - Rouge the Bat and E-123 Omega. These three banded together to track down their common target: Dr. Eggman. </h2>
+
+ </div>
+<div class="side"> 
+<img src="../images/123omega.png" alt="123-Omega" width=500>
+ </div>
+<div class="foot"> 
+<h2> E-123 Omega</h2>
+<p> E-123 Omega is a robot that was created by Dr. Eggman as the last and most powerful of his E-100 Series line of robots. However, Omega was locked in a vault to guard the amnesiac Shadow the Hedgehog. Furios at being squandered this way, Omega sword revenge on his creator. Eventually, Rouge activated him by accident, convincing Omega to join her and Shadow as Team Dark to face Eggman.</p>
+
+
+ </div>
+</div>
 
 
 </body>
