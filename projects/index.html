@@ -2,13 +2,84 @@
 <html>
 <head>
 <title> Lore </title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.grid{
+display:grid;
+height: 150vh;
+gap:10px;
+grid:
+'head head head' 1fr
+'main main menu' 4fr
+'side1 foot foot' 4fr
+/2fr 2fr 2fr;
+}
+.head{
+grid-area: head;
+text-align: center;
+background-image: linear-gradient(to top, black, #702515);
+background-color: #702515;
+display: grid;
+font-size: 50px;
+}
+.main{
+grid-area: main;
+background-color: #5C1C0E;
+display: grid;
+text-align: center;
+border: 1px solid #b89242 ;
+font-size: 30px;
+}
+.menu{
+grid-area: menu;
+background-color: #black;
+display: grid;
+place-items: center;
+font-size: 30px;
+}
+.side1{
+grid-area: side1;
+background-color: #black;
+display: grid;
+font-size: 30px;
+}
+.foot{
+grid-area: foot;
+background-color: #5c1c0E;
+text-align: center;
+border: 1px solid #b89242;
+display: grid;
+font-size: 30px;
+}
+</style>
 </head>
 
 <body>
 
+<div class="grid">
+<div class="head"> 
+<h1> L.O.R.E </h1>
+ </div>
+<div class="main"> 
+<h2> Introduction: </h2>
+<blockquote> "I'm letting go of that destructive anger. But I will continue to fight. Fight.. with your wish in my heart. Your wish for everyone to have a chance to be happy." </blockquote>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp; Shadow the Hedgehog is a character that appears in the <em> Sonic the Hedgehog </em> series. He's introduced as a recurrent arch-rival of Sonic the Hedgehog, whom he resembles and with whom he shares many abilities. His powers include Chaos Control which allows him to control space and time with the use of a Chaos Emerald. </p>
 
 
-
+ </div>
+<div class="menu">
+<img src="../images/shadowpng.png" alt="Shadow the Hedgehog" width=500>
+ </div>
+<div class="side1">
+<img src="../images/maria.png" alt="Maria Robotnik">
+ </div>
+<div class="foot">
+<h2> Backstory: </h2>
+<p> Shadow was created aboard the Space Colony ARK over 50 years ago by Professor Gerald Robotnik. He is the final result of Project Shadow, a government experiment that was only completed by infusing Shadow with the DNA of the alien Black Doom. After birth, Shadow befriended Gerald's granddaughter, Maria Robotnik. However, G.U.N. (Guardian Units of Nations) deemed him a threat and raided the ARk, resulting in the captures of Shadow and Gerald, and the death of Maria. Driven to madness, Gerald altered Shadow's memories to one day seek revenge.</p>
+<p> Shadow then remained in stasis for deacdes until freed by Dr. Eggman (Professor Gerald RObotnik's grandson). Through his mission of gaining vengence, he clashed with Sonic and his friends until his true memories of Maria returned, inspiring him to save the world from Gerald's doomsday plot. However, Shadow fell to Earth and lost his moemories in the process. He later regains these memories after an encounter with Black Arms during his invasion of Earth. Ever since, he has fought for Maria's wish of peace ever since. </p>
+ </div>
+</div>
 </body>
 </html>
 
