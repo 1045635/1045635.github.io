@@ -3,10 +3,109 @@
 <head>
 
 <title> Featured Games </title>
-
+<link rel="stylesheet" href="styles.css">
+<style>
+.grid{
+display: grid;
+height: 200vh;
+gap: 10px;
+grid: 
+'head head head' 1fr
+'first desc1 desc1' 4fr
+'second desc2 desc2' 4fr
+'third desc3 desc3' 4fr
+'fourth desc4 desc4' 4fr
+'fifth desc5 desc5' 4fr
+/2fr 2fr 2fr;
+}
+.head{
+grid-area: head;
+text-align: center;
+font-size: 30px;
+background-image: linear-gradient(to top, black, #5C1C0E);
+display: grid;
+}
+.first{
+grid-area: first;
+display: grid;
+background-color: #5C1C0E;
+}
+.desc1{
+grid-area: desc1;
+display: grid;
+border: 1px solid #b89242;
+background-color: #5C1C0E;
+}
+.second{
+display: grid;
+grid-area: second;
+background-color: #5C1C0E;
+}
+.desc2{
+grid-area: desc2;
+display: grid;
+border: 1px solid #b89242;
+background-color: #5C1C0E;
+}
+.third{
+display: grid;
+grid-area: third;
+background-color: #5C1C0E;
+}
+.desc3{
+display: grid;
+grid-area: desc3;
+border: 1px solid #b89242;
+background-color: #5C1C0E;
+}
+.fourth{
+display:grid;
+grid-area: fourth;
+background-color: #5C1C0E;
+}
+.desc4{
+display: grid;
+grid-area: desc4;
+border: 1px solid #b89242;
+background-color: #5C1C0E;
+}
+.fifth{
+display: grid;
+grid-area: fifth;
+background-color: #5C1C0E;
+}
+.desc5{
+grid-area: desc5;
+display: grid;
+border: 1px solid #b89242;
+background-color: #5C1C0E;
+}
+</style>
 </head>
 <body>
-
+<div class="grid">
+<div class="head"><h1> F.E.A.T.U.R.E.D &nbsp;&nbsp; G.A.M.E.S </h1></div>
+<div class="first"> 
+<img src="../images/sxs.jpg" alt="Sonic X Shadow Generations" width=500>
+ </div>
+<div class="desc1"> desc1 </div>
+<div class="second"> 
+<img src="../images/shad.jpg" alt="Shadow the Hedgehog Game" width=500>
+ </div>
+<div class="desc2">  desc2 </div>
+<div class="desc3"> desc3 </div>
+<div class="third"> 
+<img src="../images/sonhero.jpg" alt="Sonic Heroes" width=500>
+ </div>
+<div class="fourth"> 
+<img src="../images/2006.jpg" alt="Sonic 2006" width=500>
+</div>
+<div class="desc4"> desc4 </div>
+<div class="fifth"> 
+<img src="../images/forces.jpg" alt="Sonic Forces" width=500>
+ </div>
+<div class="desc5"> desc5 </div>
+</div>
 
 </body>
 </html>
