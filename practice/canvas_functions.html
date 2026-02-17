@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+
+<title> Canvas - with functions! </title>
+
+</head>
+<body>
+<h1> Canvas - with functions! </h1>
+<canvas width=800 height=800 id="myCanvas">
+</canvas>
+<script>
+const canvas= document.getElementById("myCanvas");
+const ctx = ccanvas.getContext("2d");
+
+
+ctx.fillRect(100,100,100,100);
+function fillRectWithColor(x,y,width,height,color){
+ctx.fillStyle=color;
+ctx.fillRect(x,y,width,height);
+}
+fillRectWithColor(0,0,800,800, "blue")
+
+function fillCircleWithColor(x,y,size, rad1, rad2, color){
+ctx.fillStyle=color;i
+ctx.beginPath();
+ctx.arc(x,y,size, rad1, rad2)
+ctx.fill();
+}
+fillCircleWithColor(0,0,20,-2*Math.PI, 0, "blue")
+
+function drawSnowman(x,y){
+fillCircleWithColor(x,y,-70,20,"white");
+fillCircleWithColor(x,y,50,'white";
+fillCircleWithColor(x,y+125,75, "white");
+
+}
+drawSnowman(400,400);
+
+
+</script>
+</body>
+</html>
