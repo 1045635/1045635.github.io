@@ -15,10 +15,10 @@ const canvas=document
 .getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 let x = 1;
-let speed=0.5;
+let speed=3;
 let time=1;
 let y=1;
-let speed2 = 1;
+let speed2 = 2;
 function animate(){
 x = x + speed;
 y = y + speed2;
@@ -32,19 +32,103 @@ if(time>160){
 x=x + speed;
 }
 
+if(x>200){
+y=y-speed;
+}
 if(x>800){
-x = 0;
+x=x-speed;
+
 }
 ctx.clearRect(0,0,800,800);
-ctx.fillStyle="orange";
-ctx.fillRect(x,y,10,50);
+ctx.fillStyle="black";
+ctx.fillRect(0,0,800,800);
 console.log(x);
-requestAnimationFrame(animate);
+
+
+ctx.fillStyle="orange";
+ctx.fillRect(x,y,200,20);
+console.log(x);
+
+ctx.fillStyle="yellow";
+ctx.fillRect(x,y+20, 200,10);
+console.log(x);
+
+ctx.fillStyle="green";
+ctx.fillRect(x,y+30,200,10);
+console.log(x);
+
+ctx.fillStyle="blue";
+ctx.fillRect(x,y+40,200,10);
+console.log(x);
+
+ctx.fillStyle="purple";
+ctx.fillRect(x,y+50,200,10);
+console.log(x);
 
 ctx.fillStyle="red";
-ctx.fillRect(x,y,10,50);
+ctx.fillRect(x,y,200,10);
 console.log(x);
+ctx.beginPath();
+ctx.fillStyle="grey";
+ctx.arc(x+160,y+30,50,0,2*Math.PI);
+ctx.fill();
+console.log(x);
+
+ctx.beginPath();
+ctx.moveTo(160+x,10+y);
+ctx.lineTo(110+x ,50+y);
+ctx.lineTo(90+x,10+y);
+ctx.fillStyle='grey';
+ctx.fill();
+console.log(x);
+
+ctx.beginPath();
+ctx.moveTo(190+x,15+y-30);
+ctx.lineTo(140 +x, 40+y-30);
+ctx.lineTo(120+x, 2+y-30);
+ctx.fillStyle='grey';
+ctx.fill();
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.fillRect(x+120,y+50,15,2);
+console.log(x);
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.fillRect(x+120,y+60,15,2);
+console.log(x);
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.fillRect(x+190,y+50,15,2);
+console.log(x);
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.fillRect(x+190, y+60, 15,2);
+console.log(x);
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.arc(x+180,y+30,5,0, 2*Math.PI);
+ctx.fill();
+console.log(x);
+
+ctx.beginPath();
+ctx.fillStyle="black";
+ctx.arc(x+140,y+30,5,0,2*Math.PI);
+ctx.fill();
+console.log(x);
+
+ctx.beginPath();
+ctx.fillStyle="pink";
+ctx.arc(x+160, y+50, 5, 0, 2*Math.PI);
+ctx.fill();
+console.log(x);
+
 requestAnimationFrame(animate);
+
 
 }
 animate();
