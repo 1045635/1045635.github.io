@@ -5,7 +5,15 @@ This game is based off of the Scissor Seven Universe. I incorporated the main is
 
 ## Map
 
-The map consists of Chicken Island, Xuanwu, and Stan Country.
+The map consists of Chicken Island, Xuanwu, and Stan Country. Chicken Island is the default for traversing between the islands. Xuanwu also has two seperate places that the player can enter: 'center' and 'Assassin headquarter'. Stan country, however, has a mandatory encounter where the player can flee back to Chicken Island if they wish.
+
+```mermaid
+graph TD;
+Center <--> Xuanwu;
+Assassin Headquarter <--> Xuanwu;
+Xuanwu <--> Chicken Island;
+Stan Country <--> Chicken Island;
+```
 
 
 
