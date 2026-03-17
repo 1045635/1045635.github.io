@@ -47,10 +47,12 @@ function locationB() {
 }else if(input.toLowerCase() === "center"){
 print("You enjoy the scenery and have some snacks with Dai bo and Xiaofei.");
 waitThenCall(locationB);
+}else if(input.toLowerCase() === "daibo help!"){
+print("Xuanwu is home to the world's top assassins. They're dangerous individuals and are enemies of Stan Country.");
 }else if(input.toLowerCase()=== "assassin headquarters"){
 print("Upon arrival, you see the leader of Xuanwu. In his hand he holds a strange token with the number '7' engraved." + "\nhe reveals your identity; the number one assassin in Xuanwu." + "\nHowever, in the past you've betrayed the country, so you're currently deemed an enemy.")
-print("He lunges at you with ferocious speed! Quick, get ready for battle!");
-
+print("He lunges at you with ferocious speed! Quick, get ready for battle!");i
+fightLeader(input);
         } else {
             stayHere();
             waitThenCall(locationB);
