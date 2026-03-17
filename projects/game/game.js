@@ -39,15 +39,15 @@ function locationB() {
     print("\nWelcome to Xuanwu..");
     print("\nThis area feels familiar, for reasons unknown");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tChicken Islandi" + "\n\tcenter" + "\n\tAssassin Headquarters");
+        "\n\tChicken Island" + "\n\tcenter" + "\n\tAssassin Headquarters");
     
     function processInput(input){
         if (input.toLowerCase() === "chicken island") {
             locationA();
-}else if(input.toLowerCase() === "center");
+}else if(input.toLowerCase() === "center"){
 print("You enjoy the scenery and have some snacks with Dai bo and Xiaofei.");
 waitThenCall(locationB);
-}else if(input.toLowerCase()=== "Assassin Headquarters");
+}else if(input.toLowerCase()=== "assassin headquarters"){
 print("Upon arrival, you see the leader of Xuanwu. In his hand he holds a strange token with the number '7' engraved." + "\nhe reveals your identity; the number one assassin in Xuanwu." + "\nHowever, in the past you've betrayed the country, so you're currently deemed an enemy.")
 print("He lunges at you with ferocious speed! Quick, get ready for battle!");
 
@@ -61,7 +61,7 @@ print("He lunges at you with ferocious speed! Quick, get ready for battle!");
 
 function fightLeader(input){
 while(leaderHealth > 0){
-print("\nChoose One of the following attacks: " + \nstab" + "\nslash")
+print("\nChoose One of the following attacks: " +" \nstab" + "\nslash")
 if(input.toLowerCase() === "stab"){
 leaderHealth=leaderHealth-40;
 print("Enemy's Current Health: " + str(leaderHealth) + ")");
@@ -70,6 +70,9 @@ fightLeader(input);
 leaderHealth=leaderHealth-30;
 print("Enemy's Current Health: " + str(leaderHealth) + ")");
 fightLeader(input);
+} else{
+stayHere();
+waitThenCall(fightLeader);
 }
 }
 if(leaderHealth <= 0){
@@ -79,8 +82,6 @@ print("Current rank: " + str(rank) + ")");
 }
 if(rank === 0){
 print("Return to Chicken Island");
-}
-waitThenCall(locationB);
 }
 }
 waitForInput(processInput);
@@ -99,13 +100,15 @@ if(input.toLowerCase() ==="stab"){
 stanHealth= stanHealth-30;
 print("Enemy's Current Health: " + str(stanHealth) + ")");
 fightStan(input);
-}else if(input.toLowerCase()==="slash");
+}else if(input.toLowerCase()==="slash"){
 stanHealth=stanHealth-20;
 print("Enemy's Current Health: " + str(stanHealth) + ")");
 fightStan(input);
 } else{
 stayHere();
-
+waitThenCall(fightStan);
+}
+}
 if(stanHealth<= 0){
 rank= rank-7369
 print("Congrats! You beat the Prince of Stan, your rank has been boosted.");
@@ -113,9 +116,6 @@ print("Current rank: " + str(rank) + ")");
 }
 if(rank === 0){
 print("Return to Chicken Island");
-}
-waitThenCall(locationC);
-}
 }
 waitForInput(processInput);
 }
@@ -135,7 +135,6 @@ locationA();
 } else {
 stayHere();
 waitThenCall(locationC);
-}
 }
 waitForInput(processInput);
 }
