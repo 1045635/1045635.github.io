@@ -4,7 +4,7 @@ let gameActive = true; //this variable is required.
 let rank=17369
 weapon=0
 stanHealth=50
-
+leaderHealth=100
 
 //If you need, add any "helper" functions here
 
@@ -28,7 +28,10 @@ print("Chicken Island: You own a barbershop on this small island with your frien
             stayHere();
             waitThenCall(locationA);
         }
-    }
+if(rank === 0){
+print("Congrats on becoming the number one assassin!");
+print("Game Over.") 
+   }
     waitForInput(processInput);
 }
 
@@ -46,13 +49,42 @@ function locationB() {
 print("You enjoy the scenery and have some snacks with Dai bo and Xiaofei.");
 waitThenCall(locationB);
 }else if(input.toLowerCase()=== "Assassin Headquarters");
-print("Upon arrival, you see
+print("Upon arrival, you see the leader of Xuanwu. In his hand he holds a strange token with the number '7' engraved." + "\nhe reveals your identity; the number one assassin in Xuanwu." + "\nHowever, in the past you've betrayed the country, so you're currently deemed an enemy.")
+print("He lunges at you with ferocious speed! Quick, get ready for battle!");
+
         } else {
             stayHere();
             waitThenCall(locationB);
         }
     }
     waitForInput(processInput);
+}
+
+function fightLeader(input){
+while(leaderHealth > 0){
+print("\nChoose One of the following attacks: " + \nstab" + "\nslash")
+if(input.toLowerCase() === "stab"){
+leaderHealth=leaderHealth-40;
+print("Enemy's Current Health: " + str(leaderHealth) + ")");
+fightLeader(input);
+}else if(input.toLowerCase() ==="slash"){
+leaderHealth=leaderHealth-30;
+print("Enemy's Current Health: " + str(leaderHealth) + ")");
+fightLeader(input);
+}
+}
+if(leaderHealth <= 0){
+rank = rank - 9999
+print("Congrats! You beeat the Prince of Stan, your rank has been boosted.");
+print("Current rank: " + str(rank) + ")");
+}
+if(rank === 0){
+print("Return to Chicken Island");
+}
+waitThenCall(locationB);
+}
+}
+waitForInput(processInput);
 }
 
 function locationC(){
@@ -62,6 +94,7 @@ print("\nYou're greeted by a strange man in a robe and underwear, pointing a wea
 print("\nWhat do you do next?:" + "\n\tFight Him" + "\n\tTalk to him");
 
 function fightStan(input){
+while(stanHealth > 0);
 print("\nChoose one of the following attacks: " + "\nstab" + "\nslash")
 if(input.toLowerCase() ==="stab"){
 stanHealth= stanHealth-30;
@@ -78,6 +111,9 @@ if(stanHealth<= 0){
 rank= rank-7369
 print("Congrats! You beat the Prince of Stan, your rank has been boosted.");
 print("Current rank: " + str(rank) + ")");
+}
+if(rank === 0){
+print("Return to Chicken Island");
 }
 waitThenCall(locationC);
 }
