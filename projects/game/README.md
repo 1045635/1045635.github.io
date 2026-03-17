@@ -1,10 +1,7 @@
 # Chris Needs Coffee
 
 ## Setting
-
-This game takes place at the Arlington Career Center. I tried to f
-faithfully recreate it, with the exception of moving the 
-library to the first floor.
+This game is based off of the Scissor Seven Universe. I incorporated the main islands used in the show: Chicken Island, Xuanwu, and Stan Country.
 
 ## Map
 
@@ -24,31 +21,11 @@ The player starts on the bus, and then is directed into the Commons. T
 They can explore, but must eventually make their way to rm511.
 
 ## Story
+You start as the main character seven who aspires to be the top assassin. In his journey, he starts at Chicken Island (his home) and ventures to the following islands: Stan Country and Xuanwu. During his encounters on the islands he fights various foes to raise his rank.
 
-When the user gets to rm511, they learn that the teacher is asleep.
-They must take the teacher's coffee mug to the library, get it 
-filled, and then bring it back to the teacher.
-
-The game starts 15 minutes before the morning class bell, and each
-move costs 1 minute. So this journey must be completed in 15 moves.
-Some moves (like reading a book in the library) cost extra time.
 
 ## Global Variables
 
-The most important variables are
-`haveCup` and `cupIsFull`, both
-booleans that track progress in the
-story. Depending on these two variables,
-some rooms will display different things. For example, if you walk into the
-library without the cup, it will prompt you to
-read. If you walk in with the cup, it will show
-the librarian filling the cup with coffee.
+The most important variables are the enemy's health since it tracks and essentially operates the fights. These are boolean variables that track whether or not the enemy's health is above 0. If not, it plays the fight sequence (while also displaying the updated health after each attack). When it reaches 0 for both opponents, your rank will drop to 0, ending the game.
 
-I also have numeric variables called `day` and `minute` which keep track of 
-time. `minute` starts at 0 and counts up
-with each move.
 
-I have a little HUD map, and use a bunch of 
-boolean variables to control which
-rooms the player has discovered. A map is only displayed after the user
-visits it.
