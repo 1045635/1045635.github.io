@@ -2,7 +2,6 @@ let gameActive = true; //this variable is required.
                        //to stop the game, set it to false.
 
 let rank=17369
-weapon=0
 stanHealth=50
 leaderHealth=100
 
