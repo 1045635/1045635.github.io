@@ -1,6 +1,30 @@
 body{
+margin:0;
+overflow-x: hidden;
 color: #ecf0f6;
 background-color: #ecf0f6;
+}
+img{
+max-width: 100%;
+height: auto;
+display: block;
+}
+.grid-container {
+ display: grid;
+ grid-template-columns: 3fr 3fr;
+ grid-auto-rows: auto;
+ gap: 30px;
+ max-width: 100%;
+ overflow-x: hidden;
+}
+
+.grid-item {
+ padding: 5px;
+ overflow: hidden;
+ background-color: #ecf0f6;
+}
+*{
+box-sizing: border-box;
 }
 h2{
 color: #c1d5e5;
