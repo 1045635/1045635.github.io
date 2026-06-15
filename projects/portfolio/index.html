@@ -20,36 +20,92 @@ grid:
 grid-area: main;
 background-color: #bcd0e0;
 display: grid;
+text-align: center;
 }
 .block{
 display: grid;
+border: 2px solid #decd8a;
 grid-area: block;
 background-color: #bcd0e0;
 }
 .head{
 grid-area:head;
-font-size: 20px;
+font-size: 40px;
 display: grid;
+overflow: hidden;
 background-color: #e0ccad;
 background-image: linear-gradient(to right, #f2e8b3, #bcd0e0);
 text-align: center;
+position:relative
 border: 2px solid #bdb642;
 
 }
 .side1{
 grid-area: side1;
-background-color: #bcd0e0;
+border: 1px solid #efe7c7;
+text-align: center;
+background-color: white;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
 display: grid;
 }
 .foot{
 grid-area: foot;
-background-color: #bcd0e0;
+border: 1px solid #efe7c7;
+background-color: white;
 display:grid;
+text-align: center;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .side2{
 grid-area: side2;
-background-color: #bcd0e0;
+text-align: center;
+border: 2px solid #efe7c7;
+background-color: white;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
 display: grid;
+}
+.inner-grid{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:10px;
+padding:20px;
+background; white;
+}
+.text-box{
+background:white;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+padding:15px;
+height:400px;
+border-radius:15px;
+}
+.second-grid{
+display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:10px;
+padding: 20px;
+background;gray;
+}
+.text2{
+background:#f3edd7;
+padding 15px;
+width: 400px;
+height:400px;
+border-radius:15px;
+}
+.text-box:hover{
+transform: translateY(-8px) scale(1.03);
+}
+.side1:hover{
+transform: translateY(-8px) scale(1.03);
+}
+.foot:hover{
+transform: translateY(-8px) scale(1.03);
+}
+.side2:hover{
+transform: translateY(-8px) scale(1.03);
+}
+.flower{
+filter: opacity(50%);
 }
 </style>
 
@@ -59,22 +115,47 @@ display: grid;
 
 <div class = "grid">
 <div class = "head">
-<h1> Art Portfolio - 2026 </h1>
+<h1 class="text" style="color:white;"> Art Portfolio - 2026 </h1>
+<img src="../../images/flowerstencil.webp" class="bg-image"">
 </div>
 <div class = "main">
-<h2> About Myself </h2>
+<h1 style="color:white;"> About Me: </h1>
+<div class="inner-grid">
+<div class= "text-box"> 
+<h2> Hello, my name is Grace Le. I've been an artist for around 10 years, with 6 of those years dedicated to being a digital artist. With art having such an important influence on how I percieve the world, I wanted to create my portfolio to showcase my various art achievements. In the following boxes below I listed many of the unfinished/finished drawings from the past 2 years. <h2>
+ </div>
+<div class = "text-box"> 
+<h2> The drawing to the right is an example of one of my most recent arts. It was created on May 20, 2026. </h2>
+<h2> Although the drawing itself isn't very interesting, I thought it would be a better drawing to showcase, considering how it gives an up-close view of details. </h2>
+ </div>
+</div>
 </div>
 <div class = "block">
-<h2> Word 2 </h2>
+<img src="../../images/d1.png" alt="wip" width=470 height=570>
 </div>
 <div class = "side1">
-<h2> Sketches </h2>
+<h1> Sketches </h1>
+<div class="second-grid">
+<div class="text2">
+<h2 style="color:#e4d7a5;"> A list of the various sketches that I've made over the past 2 years, including dates and details about each drawing </h2>
+</div>
+</div>
 </div>
 <div class = "foot">
-<h2> Completed Drawings </h2>
+<h1> Completed Drawings </h1>
+<div class="second-grid">
+<div class="text2">
+<h2 style="color:#e4d7a5;"> A list of the completed drawings I've created over the past 2 years. </h2>
+</div>
+</div>
 </div>
 <div class = "side2">
-<h2> Word 5 </h2>
+<h1> Inspirations </h1>
+<div class="second-grid">
+<div class="text2">
+<h2 style="color:#e4d7a5;"> Mentions of my favorite artists/shows that I gain inspiration from </h2>
+</div>
+</div>
 </div>
 </div>
 
