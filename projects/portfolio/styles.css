@@ -2,13 +2,18 @@ body{
 color: #ecf0f6;
 background-color: #ecf0f6;
 }
+h2{
+color: #c1d5e5;
+}
 h1{
-color: #fefbf5
+color: #f3edd7;
 }
 .bg-image{
 position: absolute;
 top:0;
 left:20;
+mask-image: radial-gradient(circle, black 60%, transparent 100%);
+-webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
 width: 20%;
 height: 20%;
 object-fit: cover;
@@ -16,5 +21,7 @@ z-index:0;
 }
 .text{
 position:relative;
+top: -20px;
+left:50px;
 z-index:1;
 }
