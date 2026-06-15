@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> My Personal Portfolio </title>
+<style>
+
+
+.grid{
+display: grid;
+height: 150vh;
+gap: 10px;
+grid:
+'head head head' 1fr
+'main main block' 4fr
+'side1 foot side2' 5fr
+/2fr 2fr 2fr;
+}
+.main{
+grid-area: main;
+background-color: #bcd0e0;
+display: grid;
+}
+.block{
+display: grid;
+grid-area: block;
+background-color: #bcd0e0;
+}
+.head{
+grid-area:head;
+font-size: 20px;
+display: grid;
+background-color: #e0ccad;
+background-image: linear-gradient(to right, #f2e8b3, #bcd0e0);
+text-align: center;
+border: 2px solid #bdb642;
+
+}
+.side1{
+grid-area: side1;
+background-color: #bcd0e0;
+display: grid;
+}
+.foot{
+grid-area: foot;
+background-color: #bcd0e0;
+display:grid;
+}
+.side2{
+grid-area: side2;
+background-color: #bcd0e0;
+display: grid;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class = "grid">
+<div class = "head">
+<h1> Art Portfolio - 2026 </h1>
+</div>
+<div class = "main">
+<h2> About Myself </h2>
+</div>
+<div class = "block">
+<h2> Word 2 </h2>
+</div>
+<div class = "side1">
+<h2> Sketches </h2>
+</div>
+<div class = "foot">
+<h2> Completed Drawings </h2>
+</div>
+<div class = "side2">
+<h2> Word 5 </h2>
+</div>
+</div>
+
+</body>
+</html>
